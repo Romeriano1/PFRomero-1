@@ -1,6 +1,12 @@
-html {
+
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
   background-color: palegoldenrod;
 }
+
 
 header {
   text-align: center;
@@ -8,63 +14,70 @@ header {
   padding: 10px 20px;
 }
 
+.logo {
+  max-width: 100%;
+  height: auto;
+}
+
+
 main {
   text-align: center;
   margin: 20px;
   padding: 20px;
 }
 
+.titulouno {
+  background-color: burlywood;
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.titulodos {
+  background-color: burlywood;
+  padding: 6px 0 30px 0;
+  margin: 20px 0;
+}
+
+.mate, .mate3, .camiseta {
+  max-width: 100%;
+  height: auto;
+}
+
+
 footer {
   text-align: center;
+  padding: 20px;
 }
 
-.mate {
-  width: 800px;
-  height: 720px;
-}
-
-.mate3 {
-  width: 720px;
-  height: 720px;
-}
-
-.camiseta {
-  width: 1100px;
-  height: 900px;
-}
-
-input,
-textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: 2px solid;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
-
-h1, h2, h3 {
-  text-align: center;
-  text-decoration: underline;
-  margin: 20px 0px;
-}
-
-textarea {
-  display: block;
-  width: 100%;
-  padding: 10px;
-  border: 2px solid #fff;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-bottom: 10px;
-}
 
 .formcontacto {
   margin-top: 20px;
+  text-align: center;
 }
 
-.form {
+.formcontacto label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: black;
+}
+
+.formcontacto input[type="text"],
+.formcontacto input[type="email"],
+.formcontacto textarea {
+  width: calc(100% - 20px); 
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.formcontacto textarea {
+  height: 150px; 
+}
+.formcontacto input[type="submit"],
+.formcontacto input[type="reset"] {
   background-color: black;
   color: #fff;
   border: none;
@@ -75,93 +88,51 @@ textarea {
   margin-top: 10px;
 }
 
-input {
-  width: 100%;
-  background: #ccc;
-  padding: 18px 15px;
-  border: 5px black;
-  outline: 0px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 5px;
-  color: black;
-}
-
-p {
-  margin-top: 15px;
-  font-size: 25px;
-}
-
-.titulouno {
-  width: 100%;
-  background-color: burlywood;
-  padding: 15px;
-  margin: 20px 0;
-  margin-right: 30px;
-}
-
-.titulodos {
-  width: 100%;
-  background-color: burlywood;
-  padding-bottom: 30px;
-  margin: 20px 0;
-  margin-right: 30px;
-  padding-top: 6px;
-}
-
-h1 {
-  text-decoration: none;
-}
-
-h2 {
-  font-size: 30px;
-  text-decoration: none;
-}
 
 .nav {
   width: 100%;
   display: flex;
-  align-content: center;
-  justify-content: space-between;
+  justify-content: center;
   padding: 10px 0;
 }
 
 .nav ul {
-  width: 100%;
   list-style-type: none;
-  text-align: center;
+  padding: 0;
 }
 
 .nav ul li {
   display: inline-block;
-  margin: 20px 70px;
-  font-size: 25px;
+  margin: 0 20px;
+  font-size: 18px;
+}
+
+
+@media screen and (max-width: 768px) {
+  .mate, .mate3, .camiseta {
+      width: 100%;
+      height: auto;
+  }
+
+  .formcontacto input[type="text"],
+  .formcontacto input[type="email"],
+  .formcontacto textarea {
+      width: calc(100% - 20px); 
+  }
 }
 
 @media screen and (max-width: 400px) {
   header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 400px;
-    height: auto;
-    margin: 0 auto;
+      padding: 10px;
   }
-  header img {
-    max-width: 100%;
-    height: auto;
+
+  .titulouno, .titulodos {
+      margin: 10px 0;
   }
-  .titulouno {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    max-width: 400px;
-    height: auto;
-    margin: 20px auto;
+
+  .nav ul li {
+      margin: 0 10px;
+      font-size: 16px;
   }
 }
-
 /*# sourceMappingURL=estilo.css.map */
