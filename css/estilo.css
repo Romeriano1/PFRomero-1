@@ -1,6 +1,4 @@
-html, body {
-  height: 100%;
-  margin: 0;
+html {
   background-color: palegoldenrod;
 }
 
@@ -10,22 +8,14 @@ header {
   padding: 10px 20px;
 }
 
-.navbar {
-  background-color: transparent;
-  margin-top: 10px;
-}
-
 main {
   text-align: center;
-  margin: 10px;
-  padding: 10px;
-  min-height: calc(100vh - 70px);
+  margin: 20px;
+  padding: 20px;
 }
 
 footer {
   text-align: center;
-  background-color: burlywood;
-  padding: 5px 0;
 }
 
 .mate {
@@ -57,7 +47,7 @@ textarea {
 h1, h2, h3 {
   text-align: center;
   text-decoration: underline;
-  margin: 20px 0;
+  margin: 20px 0px;
 }
 
 textarea {
@@ -89,8 +79,8 @@ input {
   width: 100%;
   background: #ccc;
   padding: 18px 15px;
-  border: 5px solid black;
-  outline: 0;
+  border: 5px black;
+  outline: 0px;
 }
 
 label {
@@ -105,11 +95,21 @@ p {
   font-size: 25px;
 }
 
-.titulouno, .titulodos {
+.titulouno {
   width: 100%;
   background-color: burlywood;
   padding: 15px;
   margin: 20px 0;
+  margin-right: 30px;
+}
+
+.titulodos {
+  width: 100%;
+  background-color: burlywood;
+  padding-bottom: 30px;
+  margin: 20px 0;
+  margin-right: 30px;
+  padding-top: 6px;
 }
 
 h1 {
@@ -143,23 +143,25 @@ h2 {
 
 @media screen and (max-width: 400px) {
   header {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 400px;
-      height: auto;
-      margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    height: auto;
+    margin: 0 auto;
   }
   header img {
-      max-width: 100%;
-      height: auto;
+    max-width: 100%;
+    height: auto;
   }
   .titulouno {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      max-width: 400px;
-      height: auto;
-      margin: 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    height: auto;
+    margin: 20px auto;
   }
 }
+
+/*# sourceMappingURL=estilo.css.map */
