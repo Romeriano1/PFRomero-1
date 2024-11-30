@@ -4,44 +4,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contactanos - Matesuchis</title>
     <meta name="description" content="Ponte en contacto con Matesuchis para diseñar tu mate personalizado. Comparte tus ideas y recibe el mate ideal hecho con pasión argentina.">
     <meta name="robots" content="index, follow">
+    <title>Contáctanos - Matesuchis</title>
     <link rel="stylesheet" href="../css/estilo.css">
-    <link rel="icon" href="/img/logo.png" type="image/png">
+    <link rel="icon" href="../img/logo.png" type="image/png">
 </head>
 
 <body>
     <header>
-        <a href="/index.html">
-            <img src="/img/logo.png" alt="Logo de Matesuchis - Mates Artesanales" class="logo">
+        <a href="../index.html" aria-label="Ir a la página principal">
+            <img src="../img/logo.png" alt="Logo de Matesuchis - Mates Artesanales" class="logo">
         </a>
         <nav class="nav">
             <ul>
-                <li><a href="/index.html">Home</a></li>
-                <li><a href="/html/mates.html">Productos</a></li>
-                <li><a href="/html/promos.html">Promociones</a></li>
-                <li><a href="/html/contacto.html">Contáctanos</a></li>
+                <li><a href="../index.html" title="Página de inicio">Home</a></li>
+                <li><a href="../html/mates.html" title="Ver nuestros productos">Productos</a></li>
+                <li><a href="../html/promos.html" title="Ver nuestras promociones">Promociones</a></li>
+                <li><a href="../html/contacto.html" title="Contáctanos para más información">Contáctanos</a></li>
+                <li><a href="../html/Sucursales.html" title="Ver las sucursales de Matesuchis">Sucursales</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="maincontacto">
         <h1 class="titulouno">Contáctanos</h1>
-        <form class="formcontacto">
+        <p>¿Tienes alguna idea para tu mate personalizado? ¡Queremos saber de ti! Completa el siguiente formulario y diseñaremos el Matesuchi perfecto para ti.</p>
+        
+        <form class="formcontacto" action="procesar_formulario.php" method="POST" novalidate>
             <label for="nombre">Nombre y Apellido</label>
-            <input type="text" id="nombre" required>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre completo" required>
+            
             <label for="email">Email</label>
-            <input type="email" id="email" required>
+            <input type="email" id="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+            
             <label for="mensaje">Describí tu Matesuchi ideal</label>
             <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="Escriba aquí..." required></textarea>
+            
             <input type="submit" class="form" value="Enviar">
             <input type="reset" class="form" value="Borrar">
         </form>
     </main>
 
     <footer>
-        <h3>Matesuchis - Todos los derechos reservados</h3>
+        <h3>&copy; 2024 Matesuchis - Todos los derechos reservados</h3>
     </footer>
 
 </body>
